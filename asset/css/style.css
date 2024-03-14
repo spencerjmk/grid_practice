@@ -34,7 +34,7 @@ h1 {
 }
 
 .content p {
-  font-size: 20px;
+  font-size: 1.25rem;
   padding-top: 2rem;
   text-align: center;
   color: var(--Dark-Grayish-Magenta);
@@ -107,7 +107,88 @@ span {
 
 
 @media only screen and (min-width: 1440px){
+  #testimonials{
+    padding: 7rem;
+  }
   .upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content{
+    flex-basis: 40%;
+  }
+  h1, .content p{
+    text-align: left;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+
+  .ratings{
+    flex-basis: 40%;
+  }
+  span{
+    font-size: 1rem;
+  }
+  .rating-box{
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 2rem 1.5rem;
+  }
+
+  .ratings .one{
+    margin-left: -6rem ;
+    margin-right: 6rem;
+  }
+
+  .ratings .two{
+    margin-left: -3rem ;
+    margin-right: 3rem;
+  }
+
+  /* lower */
+  .lower{
+    padding: 0;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* border: 3px solid red; */
+  }
+
+  .card{
+    border-radius: 10px;
+    padding: 3rem;
     
+  }
+  
+  .card p{
+    font-size: 1.1rem;
+  }
+
+  .card h2{
+    font-size: 1.26rem;
+    line-height: 0.7;
+  }
+
+  .card img{
+    width: 3rem;
+  }
+
+  .card_header{
+    display: flex;
+    align-items: center;
+  }
+
+  .lower .two{
+    margin-top: 2rem; 
+    margin-bottom: -2rem;
+  }
+
+  .lower .three{
+    margin-top: 4rem; 
+    margin-bottom: -4rem;
   }
 }
